@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style for the horizontal list */
+      ul.horizontal-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Style for list items (links) */
+      ul.horizontal-list li {
+        display: inline;
+      }
+
+      /* Style for the pipe symbol between links */
+      ul.horizontal-list li:not(:last-child)::after {
+        content: " | ";
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Click any of the following links</p>
+    <ul class="horizontal-list">
+      <li><a href="">Opens in New</a></li>
+      <li><a href="">Opens in Self</a></li>
+      <li><a href="">Opens in Parent</a></li>
+      <li><a href="">Opens in Body</a></li>
+      <li><a href="">Send email</a></li>
+    </ul>
+  </body>
+</html>
